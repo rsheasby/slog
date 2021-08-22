@@ -38,6 +38,7 @@ func (pd prettyDuration) MarshalText() (text []byte, err error) {
 
 type SloggerRequest struct {
 	s               *Slogger
+	ClientHost      string
 	HttpMethod      string
 	HttpPath        string
 	HttpStatusCode  int
